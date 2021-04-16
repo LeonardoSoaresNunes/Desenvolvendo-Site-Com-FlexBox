@@ -1,16 +1,36 @@
-*{
+{
     margin: 0px;
     padding: 0px;
+   
 
 }
 .conteiner{
     background-color: #ccc;
-    height: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction:row; /* column |  column-reverse | row-reverse */
+    flex-wrap:wrap; 
+    /* wrap | wrap-reverse*/
+    /* flex-flow:wrap; */
+
+    justify-content: flex-start;
+    /* flex-start | flex-end  |    center  | space-around  | space-between  |   |  */
+
+    align-items:stretch;
+    /* flex-start | flex-end  |  center|baseline  alinaha de acordo com o conteudo */
+
+    align-content:stretch;
+     /* flex-start | flex-end  |  center|space-betwen | space-around  |stretch  */
+
 }
+
+/* Esse é um comentario em Css  */
 
 .item {
     background-color: #333;
     color: #fff;
     padding: 20px;
     margin: 5px;
+    width: 200px;
+    
 }
