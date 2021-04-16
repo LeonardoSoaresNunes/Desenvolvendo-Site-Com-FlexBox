@@ -19,7 +19,7 @@
     align-items:stretch;
     /* flex-start | flex-end  |  center|baseline  alinaha de acordo com o conteudo */
 
-    align-content:stretch;
+    align-content:flex-start;
      /* flex-start | flex-end  |  center|space-betwen | space-around  |stretch  */
 
 }
@@ -31,6 +31,17 @@
     color: #fff;
     padding: 20px;
     margin: 5px;
-    width: 200px;
+    width: 30px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+
+    flex: 1 1 300;/*  resume todas as opções acima */
+
     
 }
+.article-1{order: 3;flex-grow: 10;flex-shrink: 3;}
+.article-2{order: 1; align-self:auto;}
+.article-3{order: 2;}
+.article-4{order: 4;}
